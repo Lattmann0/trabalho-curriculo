@@ -1,0 +1,256 @@
+/* RESET global */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+ 
+* {
+  margin: 0;
+  padding: 0;
+}
+ 
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+ 
+/* FIM RESET GLOBAL */
+ 
+body {
+    font-family: 'Inter' ,Arial, Helvetica, sans-serif;
+    max-width: 1000px;
+    max-height: auto;
+    margin: 0 auto;
+}
+ 
+#cabecalho {
+    background-color:rgb(65, 64, 64);
+    width: 100%;
+    max-width: 1000px;
+    height: 300px;
+    display: flex;
+    padding-top: 20px;
+}
+ 
+#cabecalho ul {
+    font-size: 20px;
+    color: white;
+}
+ 
+#cabecalho img{
+    max-width: 250px;
+    max-height: 250px;
+    width: 100%;
+    height: 100%;
+    border-radius:100%;
+    position: relative;
+    left: 20px;
+}
+ 
+#conteudo-0 {
+    font-size: 20px;
+    text-align: center;
+}
+ 
+#conteudo-0 p {
+    margin-right: 20px;
+    margin-bottom: 10px;
+    color: white;
+}
+ 
+#conteudo-0 nav a {
+    color:white
+}
+ 
+#nome {
+    text-align: justify;
+    font-weight: bold;
+    font-size: 50px;
+    margin-left: 70px;
+    color: white;
+}
+ 
+#funcao {
+    margin: 10px 70px;
+    font-size: 20px;
+    color:white;
+}
+ 
+#conteudo-1 {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+}
+ 
+#conteudo-1 h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+}
+ 
+#conteudo-2 {
+    background-color: rgb(192, 192, 192);
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px 20px;
+    display: flex;
+    border-top: 1px solid black;
+    gap: 20%;
+}
+ 
+#conteudo-2 h2 {
+    font-size:30px;    
+    font-weight: bold;
+    color: white;
+}
+ 
+#conteudo-3 {
+    background-color:rgb(136, 136, 136);
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px 20px;
+    gap:12%;
+    border-top: 1px solid black;
+}
+ 
+#conteudo-3 p {
+    text-align:left;    
+    margin-bottom: 10px;
+    color: white;
+}
+ 
+.subtitulo {
+    font-weight: bold;
+ 
+}
+ 
+#conteudo-4 {
+    background-color:rgb(136, 136, 136);
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px 20px;
+    gap: 14%;
+}
+ 
+#conteudo-4 ul p {
+    text-align:left;    
+    margin-bottom: 10px;
+    color: white;
+}
+ 
+#rodape {
+    background-color:rgb(247, 247, 247);
+    border-top: 1px solid black;
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    gap: 38%;
+}
+ 
+#rodape p {
+    font-size: 30px;
+}
+ 
+#rodape ul {
+    color: rgb(0, 0, 0);
+    margin-left: 15px;
+}
+ 
+#rodape ul li {
+    padding-bottom: 10px;
+    margin-top:10px ;
+}
+ 
+#caixa-fundo {
+    background-color: rgb(65, 64, 64);
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    padding: 0px 100px;
+}
+ 
+@media (max-width: 900px) {
+    
+   
+
+    #cabecalho {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+ 
+    #cabecalho img {
+        width: 150px;
+        height: 150px;
+    }
+ 
+    #nome {
+        font-size: 30px;
+        margin-left: 0px;
+        text-align: center;
+    }
+ 
+    #funcao {
+        text-align: center;
+        margin: 10px 0;
+    }
+    
+    
+    #conteudo-2,
+    #conteudo-3,
+    #conteudo-4,
+    #rodape {
+        display: flex;
+        flex-direction: row;
+        
+    } 
+
+    #conteudo-1 h1 {
+        font-size: 30px;
+    }
+
+    #conteudo-2 h2 {
+        font-size: 20px;
+    }
+
+    #rodape p {
+        font-size: 20px;
+    }
+
+    #rodape ul {
+        margin-left:0px;
+    }
+
+    #caixa-fundo {
+        padding: 50px;
+    }
+}  
+
